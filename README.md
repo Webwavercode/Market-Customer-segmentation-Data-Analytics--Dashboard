@@ -11,8 +11,8 @@ Using Python (Pandas, Scikit-learn) for data analysis and clustering, and Power 
 A key feature of the project is an **auto-refreshing Power BI dashboard** that automatically updates when the connected Excel data stored on OneDrive/SharePoint is modified.
 
 ---
-
-
+Dataset Used:
+kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python
 ---
 
 ## Tools and Technologies Used
@@ -21,53 +21,42 @@ A key feature of the project is an **auto-refreshing Power BI dashboard** that a
 - Jupyter Notebook
 - Pandas, NumPy, Matplotlib, Seaborn
 - Scikit-learn (KMeans Clustering)
-- Power BI Desktop & Power BI Service
-- OneDrive / SharePoint Online (for Excel data hosting)
+- Power BI Desktop
+
 
 ---
 
 ## Step-by-Step Workflow
 
-### 1. Setting up the Project Environment
+ 1. Setting up the Project Environment
 - Create project folder and subfolders as above.
 - Set up Python virtual environment and install required packages via `requirements.txt`.
 
-### 2. Data Preparation and Exploration
+ 2. Data Preparation and Exploration
 - Download and place the dataset (`customers.csv`) inside `data/`.
 - Use Jupyter Notebook (`customer_segmentation.ipynb`) to load data, clean missing values, remove duplicates.
-- Perform exploratory data analysis (EDA) with visualizations such as pair plots.
+- Perform exploratory data analysis (EDA) with visualizations such as pair plots. 
 
-*Insert Screenshot Placeholder:*  
-`![Data Exploration](./screenshots/data_exploration.png)` 
-
-### 3. Feature Selection and Scaling
+ 3. Feature Selection and Scaling
 - Select key features (`Age`, `Annual Income (k$)`, `Spending Score`) for clustering.
 - Scale features using `StandardScaler`.
 
-### 4. Finding Optimal Number of Clusters
+ 4. Finding Optimal Number of Clusters
 - Use the Elbow Method to identify the optimal `k` value for KMeans.
 - Visualize Sum of Squared Distances vs number of clusters.
+<img width="905" height="857" alt="Screenshot 2025-08-02 223539" src="https://github.com/user-attachments/assets/36944116-0f39-49b2-80f8-d591ec573321" />
 
-*Insert Screenshot Placeholder:*  
-`![Elbow Method](./screenshots/elbow_method.png)` 
-
-### 5. Clustering and Analysis
+ 5. Clustering and Analysis
 - Fit KMeans with the optimal cluster number.
 - Assign clusters back to data.
 - Visualize clusters using scatter plots categorized by cluster labels.
 - Summarize cluster characteristics by mean values.
+- 
 
-*Insert Screenshot Placeholder:*  
-`![Cluster Visualization](./screenshots/cluster_visualization.png)`
+<img width="725" height="764" alt="Screenshot 2025-08-02 223551" src="https://github.com/user-attachments/assets/ea305f96-df4a-451b-a4f8-7236b3829d59" />
+<img width="916" height="582" alt="Screenshot 2025-08-02 223603" src="https://github.com/user-attachments/assets/12ee9029-074f-4164-98e3-71414d44a91f" />
 
-### 6. Reporting Insights
-- Summarize actionable business insights for each cluster in the notebook.
-- Export the notebook as a PDF report and save in `reports/segmentation_report.pdf`.
-
-*Insert Screenshot Placeholder:*  
-`![Report Sample](./screenshots/report_sample.png)`
-
-### 7. Power BI Dashboard with Auto-refresh
+ 6. Power BI Dashboard with Auto-refresh
 - Save the clustered data as an Excel file (`customer_segments.xlsx`).
 - Upload Excel to OneDrive or SharePoint Online.
 - Connect Power BI Desktop to this Excel file via cloud connection.
@@ -76,8 +65,7 @@ A key feature of the project is an **auto-refreshing Power BI dashboard** that a
 - Configure Scheduled Refresh in Power BI Service settings to enable automatic data updates when the Excel file changes.
 - Dashboard reflects updated data after refresh without manual intervention.
 
-*Insert Screenshot Placeholder:*  
-"C:\Users\Priyanka\OneDrive\Pictures\Screenshots\Screenshot 2025-08-02 184938.png"
+<img width="1168" height="660" alt="Screenshot 2025-08-02 184938" src="https://github.com/user-attachments/assets/37c1b25f-0e33-4671-94f8-eff8fa533ee9" />
 
 ---
 
