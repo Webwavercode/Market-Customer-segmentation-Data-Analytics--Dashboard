@@ -64,7 +64,8 @@ A key feature of the project is an **auto-refreshing Power BI dashboard** that a
 - Configure Scheduled Refresh in Power BI Service settings to enable automatic data updates when the Excel file changes.
 - Dashboard reflects updated data after refresh without manual intervention.
 
-<img width="1168" height="660" alt="Screenshot 2025-08-02 184938" src="https://github.com/user-attachments/assets/37c1b25f-0e33-4671-94f8-eff8fa533ee9" />
+<img width="1281" height="718" alt="image" src="https://github.com/user-attachments/assets/83253767-3fe7-45b0-bad1-12e57cdf550d" />
+
 
 ---
 
